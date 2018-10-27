@@ -1,9 +1,8 @@
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
+import org.junit.Test;
 
-public class Start {
-    public static void main(String[] args) throws Exception {
+public class TestStart {
+    @Test
+    public void testMain()throws Exception{
         Root root = new Root();
         root.addBranch("not");
         root.addBranch("Kek");
@@ -27,7 +26,8 @@ public class Start {
         root.addInContentObjects(content3, files4);
         root.addInContentObjects(content3, files5);
         root.addInContentObjects(content4, files6);
-
-
+        root.updateCommit("not",file,new Object());
+        root.allInfo();
     }
+
 }

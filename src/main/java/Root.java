@@ -79,8 +79,8 @@ public class Root {
                 }
                 throw new Exception("File not found");
             }
-    public void updateCommit(String branch, Documents nameDocument, Object object)throws Exception {
-        String name = nameDocument.getObjectName();
+    public void updateCommit(String branch, Documents newDocument, Object object)throws Exception {
+        String name = newDocument.getObjectName();
         Content content = branches.get(branch);
         try{
         if (content == null) {

@@ -1,7 +1,7 @@
 
 public class Documents {
-    String objectName;
     int fileId;
+    String objectName;
     Object object;
 
     public Documents(String objectName, Object object) {
